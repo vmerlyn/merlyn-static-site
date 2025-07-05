@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome</h1>
+    <p>Please fill out the form below to get in touch.</p>
+
+    <form action="https://formspree.io/f/xgvybynk" method="POST" class="contact-form">
+      <label>
+        Your Name:
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Your Email:
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Your Message:
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
