@@ -18,6 +18,11 @@ header {
   text-align: center;
 }
 
+header .container {
+  min-height: 100px;
+  padding: 2rem 0;
+}
+
 .subtitle {
   font-weight: 300;
   margin-top: 0.5rem;
@@ -29,6 +34,11 @@ header {
   margin-bottom: 1rem;
 }
 
+.icon {
+  display: inline-block;
+  width: 1.2em;
+  text-align: center;
+}
 
 .service {
   background: white;
@@ -37,6 +47,7 @@ header {
   border-left: 4px solid #0070f3;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  /* min-height: 195px; */
 }
 
 .cta {
