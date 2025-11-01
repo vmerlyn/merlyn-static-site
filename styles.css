@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: #f9f9f9;
+  background: #f4f6f8;
   color: #333;
 }
 
@@ -40,14 +40,48 @@ header .container {
   text-align: center;
 }
 
+.service h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+
 .service {
-  background: white;
+  background:#ffffff;
   padding: 1.5rem;
   margin-bottom: 1rem;
   border-left: 4px solid #0070f3;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   /* min-height: 195px; */
+}
+
+.service-list {
+  margin: 0.6em 0 0 0;
+  padding: 0;
+  list-style: none; /* hide default bullets */
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.service-list li {
+  position: relative;
+  margin: 0 0 0.6em 0;
+  padding-left: 1.4em; /* space for custom bullet */
+}
+
+/* The custom bullet ▸, perfectly aligned */
+.service-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  font-size: 1.1em;
+  color: #0077b6; /* deep technical blue; adjust to your brand */
+}
+
+/* Optional subtle styling for emphasis */
+.service-list strong {
+  color: #111;
 }
 
 .cta {
