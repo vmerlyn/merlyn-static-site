@@ -12,10 +12,12 @@ body {
 }
 
 header {
-  background: #24292e;
-  color: white;
+  background: #2E4F6A url('LI_Background.png') center center;
+  background-size: cover;
+  color: #ffffff;
   padding: .5rem 0;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 header .container {
@@ -24,8 +26,11 @@ header .container {
 }
 
 .subtitle {
-  font-weight: 300;
-  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  font-style: italic;
+  opacity: 0.9;
 }
 
 .services h2,
@@ -46,19 +51,20 @@ header .container {
 }
 
 .service {
-  background:#ffffff;
+  background: #ffffff;
   padding: 1.5rem;
   margin-bottom: 1rem;
   border-left: 4px solid #0070f3;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   /* min-height: 195px; */
 }
 
 .service-list {
   margin: 0.6em 0 0 0;
   padding: 0;
-  list-style: none; /* hide default bullets */
+  list-style: none;
+  /* hide default bullets */
   line-height: 1.6;
   font-size: 1rem;
 }
@@ -66,7 +72,8 @@ header .container {
 .service-list li {
   position: relative;
   margin: 0 0 0.6em 0;
-  padding-left: 1.4em; /* space for custom bullet */
+  padding-left: 1.4em;
+  /* space for custom bullet */
 }
 
 /* The custom bullet ▸, perfectly aligned */
@@ -76,7 +83,8 @@ header .container {
   left: 0;
   top: 0.05em;
   font-size: 1.1em;
-  color: #0077b6; /* deep technical blue; adjust to your brand */
+  color: #0077b6;
+  /* deep technical blue; adjust to your brand */
 }
 
 /* Optional subtle styling for emphasis */
@@ -117,4 +125,67 @@ footer {
   font-size: 0.9rem;
   color: #666;
   padding: 2rem 0;
+}
+
+/* Engagement Flow Styles */
+.engagement-intro {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.engagement-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.flow-step {
+  flex: 1;
+  min-width: 180px;
+  max-width: 220px;
+  padding: 1.5rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.flow-step strong {
+  display: block;
+  color: #0070f3;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.flow-arrow {
+  font-size: 2rem;
+  color: #0070f3;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.cta-action {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .engagement-flow {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    transform: rotate(0deg);
+  }
+
+  .flow-step {
+    max-width: 100%;
+  }
 }
